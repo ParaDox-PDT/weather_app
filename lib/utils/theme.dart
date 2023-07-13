@@ -6,12 +6,12 @@ import 'colors.dart';
 
 class AppTheme {
   static ThemeData darkTheme = ThemeData(
-    scaffoldBackgroundColor: AppColors.C_180B37,
+    scaffoldBackgroundColor: AppColors.black,
     appBarTheme: const AppBarTheme(
       elevation: 0,
-      backgroundColor: AppColors.C_180B37,
+      backgroundColor: AppColors.black,
       systemOverlayStyle: SystemUiOverlayStyle(
-        statusBarColor: AppColors.C_180B37,
+        statusBarColor: AppColors.black,
         statusBarBrightness: Brightness.light,
         statusBarIconBrightness: Brightness.light,
       ),
@@ -52,13 +52,13 @@ class AppTheme {
       //title
       titleLarge: TextStyle(
           color: AppColors.textColor,
-          fontSize: 20.sp,
+          fontSize: 22.sp,
           fontWeight: FontWeight.w700,
           fontFamily: "Lato"),
       titleMedium: TextStyle(
           color: AppColors.textColor,
           fontSize: 16.sp,
-          fontWeight: FontWeight.w700,
+          fontWeight: FontWeight.w600,
           fontFamily: "Lato"),
       titleSmall: TextStyle(
           color: AppColors.textColor,
@@ -78,19 +78,19 @@ class AppTheme {
           fontFamily: "Lato"),
       labelSmall: TextStyle(
           color: AppColors.textColor,
-          fontSize: 10.sp,
-          fontWeight: FontWeight.w400,
+          fontSize: 11.sp,
+          fontWeight: FontWeight.w500,
           fontFamily: "Lato"),
       //body
       bodySmall: const TextStyle(
           color: AppColors.passiveTextColor,
           fontSize: 16,
-          fontWeight: FontWeight.w700,
+          fontWeight: FontWeight.w500,
           fontFamily: "Lato"),
       bodyMedium: TextStyle(
           color: AppColors.textColor,
-          fontSize: 16.sp,
-          fontWeight: FontWeight.w700,
+          fontSize: 14.sp,
+          fontWeight: FontWeight.w500,
           fontFamily: "Lato"),
       bodyLarge: TextStyle(
           color: AppColors.textColor,
