@@ -8,8 +8,8 @@ import 'package:http/http.dart' as http;
 import '../models/universal_response.dart';
 
 class ApiProvider {
-  Future<UniversalResponse> getAllData() async {
-    Uri uri = Uri.parse("$baseUrl/data/2.5/weather?appid=$apiKey&q=Tashkent");
+  Future<UniversalResponse> getAllData(String region) async {
+    Uri uri = Uri.parse("$baseUrl/data/2.5/weather?appid=$apiKey&q=$region");
     try {
       http.Response response = await http.get(uri);
 

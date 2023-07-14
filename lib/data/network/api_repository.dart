@@ -7,8 +7,8 @@ class ApiRepository{
   final ApiProvider apiProvider;
   ApiRepository({required this.apiProvider});
 
-  Future<WeatherModel?> getWeatherData()async{
-    UniversalResponse universalResponse=await apiProvider.getAllData();
+  Future<WeatherModel?> getWeatherData({required String region})async{
+    UniversalResponse universalResponse=await apiProvider.getAllData(region);
     if(universalResponse.error.isEmpty){
       return universalResponse.data as  WeatherModel;
     }

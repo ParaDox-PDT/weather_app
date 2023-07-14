@@ -52,24 +52,24 @@ flutter:
 
 
   fonts:
-    - family: Poppins
+    - family: Montserrat
       fonts:
-        - asset: assets/fonts/Poppins/Montserrat-Black.ttf
-        - asset: assets/fonts/Poppins/Montserrat-BlackItalic.ttf
-        - asset: assets/fonts/Poppins/Montserrat-Bold.ttf
-        - asset: assets/fonts/Poppins/Montserrat-BoldItalic.ttf
-        - asset: assets/fonts/Poppins/Montserrat-ExtraBold.ttf
-        - asset: assets/fonts/Poppins/Montserrat-ExtraBoldItalic.ttf
-        - asset: assets/fonts/Poppins/Montserrat-ExtraLight.ttf
-        - asset: assets/fonts/Poppins/Montserrat-ExtraLightItalic.ttf
-        - asset: assets/fonts/Poppins/Montserrat-Italic.ttf
-        - asset: assets/fonts/Poppins/Montserrat-Light.ttf
-        - asset: assets/fonts/Poppins/Montserrat-LightItalic.ttf
-        - asset: assets/fonts/Poppins/Montserrat-Medium.ttf
-        - asset: assets/fonts/Poppins/Montserrat-MediumItalic.ttf
-        - asset: assets/fonts/Poppins/Montserrat-Regular.ttf
-        - asset: assets/fonts/Poppins/Montserrat-SemiBold.ttf
-        - asset: assets/fonts/Poppins/Montserrat-SemiBoldItalic.ttf
-        - asset: assets/fonts/Poppins/Montserrat-Thin.ttf
-        - asset: assets/fonts/Poppins/Montserrat-ThinItalic.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Black.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-BlackItalic.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Bold.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-BoldItalic.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-ExtraBold.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-ExtraLight.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Italic.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Light.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-LightItalic.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Medium.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-MediumItalic.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-SemiBold.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Thin.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-ThinItalic.ttf
           style: italic

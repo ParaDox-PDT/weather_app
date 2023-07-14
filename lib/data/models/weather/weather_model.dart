@@ -12,7 +12,7 @@ class WeatherModel {
   final num visibility;
   final WindModel windModel;
   final num clouds;
-  final num dateTime;
+  final int dateTime;
   final SysModel sysModel;
   final num timezona;
   final num id;
@@ -47,7 +47,7 @@ class WeatherModel {
         clouds: json["clouds"]["all"] as num? ?? 0 ,
         cod: json["cod"] as num? ?? 0,
         currentWeatherModel: CurrentWeatherModel.fromJson(json['weather'][0]),
-        dateTime: json["dt"] as num? ?? 0,
+        dateTime: json["dt"] as int? ?? 0,
         timezona: json["timezone"] as num? ?? 0);
   }
 }
