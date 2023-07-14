@@ -46,7 +46,7 @@ class WeatherModel {
         base: json["base"] as String? ?? "",
         clouds: json["clouds"]["all"] as num? ?? 0 ,
         cod: json["cod"] as num? ?? 0,
-        currentWeatherModel: CurrentWeatherModel.fromJson(json['weather']),
+        currentWeatherModel: CurrentWeatherModel.fromJson(json['weather'][0]),
         dateTime: json["dt"] as num? ?? 0,
         timezona: json["timezone"] as num? ?? 0);
   }

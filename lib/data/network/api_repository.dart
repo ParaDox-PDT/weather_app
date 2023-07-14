@@ -7,11 +7,11 @@ class ApiRepository{
   final ApiProvider apiProvider;
   ApiRepository({required this.apiProvider});
 
-  Future<List<WeatherModel>> fetchDefaultModelData()async{
+  Future<WeatherModel?> getWeatherData()async{
     UniversalResponse universalResponse=await apiProvider.getAllData();
     if(universalResponse.error.isEmpty){
-      return universalResponse.data as  List<WeatherModel>;
+      return universalResponse.data as  WeatherModel;
     }
-    return [];
+    return null;
   }
 }

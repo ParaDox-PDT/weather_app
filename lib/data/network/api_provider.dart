@@ -15,10 +15,10 @@ class ApiProvider {
 
       if (response.statusCode == 200) {
         return UniversalResponse(
-            data: (jsonDecode(response.body) as List?)?.map((e) =>
-                WeatherModel.fromJson(e)).toList() ?? []);
+            data: WeatherModel.fromJson(jsonDecode(response.body)));
       }
       return UniversalResponse(error: "ERROR");
+
     }catch (error){
       return UniversalResponse(error: error.toString());
     }
