@@ -34,46 +34,6 @@ class _HomeScreenState extends State<HomeScreen> {
   String? region = StorageRepository.getString("region");
   List<DailyItemModel>? days = [];
   List<HourlyItemModel>? hours = [];
-  num latt=0;
-  num longg=0;
-
-  _getHourlyData({
-    required num lat,
-    required num long,
-  }) async {
-    setState(() {
-      isLoading = true;
-    });
-
-    weatherModelAllTime =
-        await apiRepository.getHourlyData(lat: lat, long: long);
-    days = weatherModelAllTime!.daily;
-    hours = weatherModelAllTime!.hourly;
-    setState(() {
-      if (weatherModel == null) {
-        isIncorrectCity = true;
-      }
-      isLoading = false;
-    });
-  }
-
-  _getDataByLatLong({
-    required num lat,
-    required num long,
-  }) async {
-    setState(() {
-      isLoading = true;
-    });
-
-    weatherModel =
-        await apiRepository.getWeatherDataByLatLong(lat: lat, long: long);
-    setState(() {
-      if (weatherModel == null) {
-        isIncorrectCity = true;
-      }
-      isLoading = false;
-    });
-  }
 
   _getData(String searchRegion) async {
     setState(() {
@@ -81,9 +41,10 @@ class _HomeScreenState extends State<HomeScreen> {
     });
     weatherModel =
         await apiRepository.getWeatherDataByQuery(region: searchRegion);
-    latt=weatherModel!.coordModel.lat;
-    latt=weatherModel!.coordModel.lon;
-
+    weatherModelAllTime =
+    await apiRepository.getHourlyData(lat: weatherModel!.coordModel.lat, long: weatherModel!.coordModel.lon);
+    days = weatherModelAllTime!.daily;
+    hours = weatherModelAllTime!.hourly;
     setState(() {
       if (weatherModel == null) {
         isIncorrectCity = true;
@@ -95,7 +56,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     _getData("Tashkent");
-    _getHourlyData(lat: latt, long: longg);
     super.initState();
   }
 
